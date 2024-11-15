@@ -1,0 +1,83 @@
+/* Contenedor principal */
+.shopping-list-container {
+    font-family: Arial, sans-serif;
+    margin: 20px auto;
+    max-width: 600px;
+    text-align: center;
+    background-color: #f8f9fa;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Título */
+  .shopping-list-container h1 {
+    color: #333;
+    margin-bottom: 20px;
+  }
+  
+  /* Formulario */
+  .add-item-form {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+  }
+  
+  .add-item-form input {
+    flex: 1;
+    padding: 10px;
+    margin-right: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+  }
+  
+  .add-item-form button {
+    background: none;
+    border: none;
+    cursor: pointer;
+  }
+  
+  .add-item-form button img {
+    width: 24px;
+    height: 24px;
+  }
+  
+  /* Lista de compras */
+  .shopping-list {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .shopping-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    margin-bottom: 5px;
+    background-color: #ffffff;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  .shopping-item .actions button {
+    background: none;
+    border: none;
+    cursor: pointer;
+  }
+  
+  .shopping-item .actions img {
+    width: 20px;
+    height: 20px;
+  }
+  
+  /* Fondo */
+  body {
+    background-image: url('/assets/images/background.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100vh;
+    margin: 0;
+  }
+
+  

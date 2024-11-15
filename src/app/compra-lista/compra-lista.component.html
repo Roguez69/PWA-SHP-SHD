@@ -1,0 +1,25 @@
+<div class="shopping-list-container">
+    <h1>Lista de Compras</h1>
+    <form (submit)="addItem(newItem.value); newItem.value=''" class="add-item-form">
+      <input 
+        type="text" 
+        #newItem 
+        placeholder="Agregar artículo" 
+        required 
+      />
+      <button type="submit">
+        <img src="assets/icons/mas.png" alt="Agregar" />
+      </button>
+    </form>
+  
+    <ul class="shopping-list">
+      <li *ngFor="let item of items; let i = index" class="shopping-item">
+        <span>{{ item }}</span>
+        <div class="actions">
+          <button (click)="removeItem(i)">
+            <img src="assets/icons/basura.png" alt="Eliminar" />
+          </button>
+        </div>
+      </li>
+    </ul>
+  </div>
